@@ -1,0 +1,114 @@
+body {
+	font: .875em/1.35 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #f8f8f8;
+}
+
+#cabecalho {
+	background-image: url('../images/_menu.jpg');
+	background-repeat: repeat-x;
+	height: 126px;
+}
+
+
+.row{
+	margin-top:10px;
+
+}
+
+#area_restrita {
+	position: relative;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+	float: right;
+	clear: right;
+}
+
+#area_restrita img {
+	width: 30px;
+	height: 30px;
+	border-style: none;
+}
+
+cinza {
+	color: #000000;
+}
+
+vermelho {
+	color: #ff0000;
+}
+
+menor {
+	font-size: 90%;
+}
+
+/*CSS DE TESTES*/
+#celula_verde {
+	background-color: #009900;
+	text-align: center;
+	vertical-align: top;
+	width: 33%;
+	padding: 15px 15px 15px 15px;
+	font-weight: bold;
+}
+
+#celula_azul {
+	background-color: #004080;
+	text-align: center;
+	vertical-align: top;
+	width: 34%;
+	padding: 15px 15px 15px 15px;
+	font-weight: bold;
+}
+
+#celula_vermelha {
+	background-color: #b00000;
+	text-align: center;
+	vertical-align: top;
+	width: 33%;
+	padding: 15px 15px 15px 15px;
+	font-weight: bold;
+}
+
+#body_leitura {
+	font: .875em/1.35 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	width: 994px;
+	background-color: #FFFFFF;
+	margin-left: 10px;
+}
+
+#table_leitura {
+	margin-top: 10px;
+	width: 980px;
+}
+
+#table_leitura tr {
+	vertical-align: top;
+}
+
+#table_leitura td {
+	width: 50%;
+}
+
+#table_leitura h1 {
+	color: #0080ff;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+#menu_teste {
+	margin-top: 126px;
+	border: 1px solid #990000;
+	background-color: #FFFFFF;
+	height: 30px;
+	width: 980px;
+    text-align: center;
+}
+
+.campo {
+	width: 60%;
+}
+
+

@@ -1,19 +1,29 @@
-<h2><?php echo $title; ?></h2>
+<div class="container">
+    <?php echo validation_errors(); ?>
 
-<?php echo validation_errors(); ?>
+    <?php echo form_open('test/create'); ?>
 
-<?php echo form_open('test/create'); ?>
-    <div>
-        <label for="title">Título do teste</label>
-        <input type="input" name="name"><br>
+        <div class="container">
+            <div class="row">
+                <h2><?php echo $title; ?></h2>
+            </div>
 
-        <label for="text">Descrição do Teste</label>
-        <textarea name="description"></textarea><br>
-
-        <p>* Todos os testes são criados inativos por padrão. Para ativa-lo, após a criação edite o teste.</p>
-
-        <input type="hidden" name="status" value="0">
-
-        <input type="submit" value="Criar teste" name="submit">
-    </div>
-</form>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="inputEmail1">Título do teste</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail1">Descrição do Teste</label>
+                        <textarea class="form-control" rows="5" name="description" id="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                    * Todos os testes são criados inativos por padrão. Para ativa-lo, após a criação edite o teste.
+                    </div>
+                    <button class="btn btn-primary" type="submit">Gravar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

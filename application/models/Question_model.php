@@ -1,6 +1,6 @@
 <?php
 
-class QuestionType_model extends MY_Model {
+class Question_model extends MY_Model {
 
     var $primary_table = 'questions';
 
@@ -23,4 +23,11 @@ class QuestionType_model extends MY_Model {
         'description',
         'status'
     );
+
+    public function get_questions_answers() {
+        $this->db->from('questions');
+        $this->db->join('answers','answers.id_question=questions.id','left');
+
+        return $this->db->get();
+    }
 }

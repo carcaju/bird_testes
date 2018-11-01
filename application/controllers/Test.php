@@ -53,16 +53,26 @@ class Test extends CI_Controller {
             $this->load->view('templates/menu', $data);
             $this->load->view('tests/create', $data);
             $this->load->view('templates/footer', $data);
-
         } else {
             $options = $this->input->post();
             $options['id_user'] = $this->id_user;
+            $options['status'] = 0;
             unset($options['submit']);
 
             $id = $this->test_model->add($options);
-            $this->load->view('tests/success');
-        }
 
+            if($id) {
+                $this->load->view('templates/header', $data);
+                $this->load->view('templates/menu', $data);
+                $this->load->view('tests/success');
+                $this->load->view('templates/footer', $data);
+            } else {
+                $message = 'Houve algum erro na gravação do teste';
+                $handling = "Opssss!!!";
+                show_error($message,500,$handling);
+                exit;
+            }
+        }
 
     }
 }

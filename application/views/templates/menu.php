@@ -1,15 +1,22 @@
-<TABLE id="menu_teste">
-    <TR>
-        <TD><strong><a href="_show.html" target="_show">Home</a></strong></TD>
-        <TD>
-            <strong><A HREF="grammar/_grammar.html" TARGET="_show">Eng&gt; Grammar</A></strong></TD> 
-        <TD>
-            <strong><A HREF="essay/_essay.html" TARGET="_show">Eng&gt; Writing</A></strong></TD>
-        <TD>
-            <strong><A HREF="listening/_listening.html" TARGET="_show">Eng&gt; Listening</A></strong></TD> 
-        <TD>
-            <strong><A HREF="redacion/_red.html" TARGET="_show">Español</A></strong></TD> 
-        <TD>
-            <strong><A HREF="franc/_fra.html" TARGET="_show">Français</A></strong></TD>
-    </TR>
-</TABLE>
+<div class="container" style="border:thin">
+    <div class="row">
+        <div class="col-2">
+            <a href="<?php echo site_url('/'); ?>">Home</a>
+        </div>
+        <div class="col-2">
+            <a HREF="grammar/_grammar.html">Eng&gt; Grammar</a>
+        </div>
+        <div class="col-2">
+            <a HREF="essay/_essay.html">Eng&gt; Writing</a>
+        </div>
+        <div class="col-2">
+            <a HREF="listening/_listening.html">Eng&gt; Listening</a>
+        </div>
+        <div class="col-2">
+            <a HREF="redacion/_red.html">Español</a>
+        </div>
+        <div class="col-2">
+            <a HREF="franc/_fra.html">Français</a>
+        </div>
+    </div>
+</div>
