@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
+	'hostname' => 'sql8.main-hosting.eu',
+	'username' => 'u602711562_bird',
 	'password' => 'aszxdfcv',
-	'database' => 'bird_testes',
+	'database' => 'u602711562_bird',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
